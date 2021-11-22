@@ -1,0 +1,41 @@
+﻿Using System
+Using System.Collections
+Using System.Text
+Using System.Diagnostics
+
+BegClass Program
+
+	BegSr Main Shared(*Yes) Access(*Public) Attributes(System.STAThread())
+		DclSrParm args Type(*String) Rank(1)
+
+        DclFld lf Type(AVRLogic.LogicFunctions) New()
+        DclFld sw Type(StopWatch) New()
+        DclFld ms Type(*Integer4) 
+        DclFld lr Type(AsyncHelper.LogicRunner) New() 
+       
+        Console.WriteLine("Start synchronous test")
+        sw.Start()
+
+        lf.F1("sync")
+        lf.F2("sync")
+        lf.F3("sync")
+
+        sw.Stop()
+        ms = sw.ElapsedMilliseconds
+        Console.WriteLine(String.Format("Total sync elapsed time: {0:#,###} ms", ms))
+
+        Console.WriteLine("")
+
+        Console.WriteLine("Start asynchronous test")
+        sw.Reset()
+        sw.Start()
+        lr.Run()
+        sw.Stop()
+        ms = sw.ElapsedMilliseconds
+        Console.WriteLine(String.Format("Total async elapsed time: {0:#,###} ms", ms))
+
+        Console.WriteLine('Pressy any key to continue...') 
+        Console.ReadKey()
+	EndSr
+
+EndClass

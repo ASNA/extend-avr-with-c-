@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1300
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A99171F4-43ED-48FC-978B-9193EDE4E466}") = "AsyncWithAVR", "AsyncWithAVR\AsyncWithAVR.vrproj", "{8691381D-2C32-4071-8B96-33D37AC6F162}"
+EndProject
+Project("{A99171F4-43ED-48FC-978B-9193EDE4E466}") = "AVRLogic", "AVRLogic\AVRLogic.vrproj", "{02985D24-6EA7-4785-A351-FE5FFA15A713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncHelper", "AsyncHelper\AsyncHelper.csproj", "{C0B4BD62-2A24-47F5-8720-A1807D66A794}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8691381D-2C32-4071-8B96-33D37AC6F162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8691381D-2C32-4071-8B96-33D37AC6F162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8691381D-2C32-4071-8B96-33D37AC6F162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8691381D-2C32-4071-8B96-33D37AC6F162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02985D24-6EA7-4785-A351-FE5FFA15A713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02985D24-6EA7-4785-A351-FE5FFA15A713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02985D24-6EA7-4785-A351-FE5FFA15A713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02985D24-6EA7-4785-A351-FE5FFA15A713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B4BD62-2A24-47F5-8720-A1807D66A794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B4BD62-2A24-47F5-8720-A1807D66A794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B4BD62-2A24-47F5-8720-A1807D66A794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B4BD62-2A24-47F5-8720-A1807D66A794}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F42357CF-A1E6-448F-9B83-C64303399AE0}
+	EndGlobalSection
+EndGlobal

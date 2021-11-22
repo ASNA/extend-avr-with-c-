@@ -1,0 +1,30 @@
+﻿Using System
+Using System.Text
+
+DclNamespace AVRLogic
+
+BegClass LogicFunctions Access(*Public)
+    BegSr F1 Access(*Public)
+        DclSrParm Msg Type(*String) 
+
+        Console.WriteLine('F1 started ' + Msg) 
+        Sleep Interval(5000)
+        Console.WriteLine('F1 ended ' + Msg) 
+    EndSr
+
+    BegSr F2 Access(*Public) 
+        DclSrParm Msg Type(*String) 
+        
+        Console.WriteLine('F2 started ' + Msg) 
+        Sleep Interval(17000)
+        Console.WriteLine('F2 ended ' + Msg) 
+    EndSr
+
+    BegSr F3 Access(*Public) 
+        DclSrParm Msg Type(*String) 
+
+        Console.WriteLine('F3 started ' + Msg) 
+        Sleep Interval(8000)
+        Console.WriteLine('F3 ended ' + Msg) 
+    EndSr
+EndClass
